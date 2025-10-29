@@ -9,32 +9,29 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-const ChampionCard = ({ champion }) => {
+const ChampionCard = ({ champion, cardWidth = 220, cardHeight = 320 }) => {
   const navigate = useNavigate();
 
   return (
     <Box>
       <Card
         sx={{
-          width: 220, // largeur fixe
-          height: 340, // hauteur fixe
+          width: cardWidth,
+          minWidth: cardWidth,
+          maxWidth: cardWidth,
+          height: cardHeight,
+          bgcolor: "#23272a",
+          borderRadius: 2,
+          boxShadow: "0 4px 16px #C4A15B40",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "space-between",
-          background: "#34495e", // gris bleu contrasté
-          borderRadius: 2,
-          boxShadow: 2,
-          transition: "transform 0.18s, box-shadow 0.18s",
-          color: "#fff",
-          overflow: "hidden",
+          p: 2,
+          transition: "transform 0.15s",
           "&:hover": {
-            boxShadow: 6,
-            transform: "scale(1.03)",
-            background: "linear-gradient(135deg, #23272a 70%, #febc00 100%)", // effet hover orange
-            color: "#ffe",
+            transform: "scale(1.045)",
+            boxShadow: "0 0 16px #EDDC91",
           },
-          m: 1,
         }}
         onClick={() => navigate("/champion/" + champion.id)}
       >
@@ -45,7 +42,7 @@ const ChampionCard = ({ champion }) => {
           alt={champion.name}
           style={{
             width: "100%",
-            height: 150,
+            height: 200,
             objectFit: "cover",
             borderTopLeftRadius: 8,
             borderTopRightRadius: 8,

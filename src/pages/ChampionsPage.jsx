@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Container } from "@mui/material";
+import { Container, Box, Typography } from "@mui/material";
 import ChampionService from "../services/ChampionService";
 import ChampionCard from "../components/ChampionCard";
 
@@ -22,25 +22,34 @@ const ChampionsPage = () => {
   }, []);
 
   return (
-    
-    <Container
-      maxWidth="lg"
-      sx={{ pt: 3, minHeight: "100vh"}}
-    >
-      <h1 style={{ color: "#ffd700", textAlign: 'center' }}>Champions</h1>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "16px",
-          justifyContent: "center",
-        }}
-      >
-        {champions.map((champion) => (
-          <ChampionCard champion={champion} key={champion.id} />
-        ))}
-      </div>
-    </Container>
+
+      <Container>
+        <Typography
+          variant="h2"
+          sx={{
+            color: "#ffe082",
+            fontWeight: "bold",
+            mb: 4,
+            textAlign: 'center',
+            letterSpacing: "0.04em",
+            textShadow: "0 0 12px #c4a15b",
+          }}
+        >
+          Champions
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 3,
+            justifyContent: "center",
+          }}
+        >
+          {champions.map((champion) => (
+            <ChampionCard champion={champion} key={champion.id} />
+          ))}
+        </Box>
+      </Container>
   );
 };
 

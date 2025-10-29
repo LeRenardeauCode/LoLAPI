@@ -13,11 +13,51 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
+// Flèche droite personnalisée
+const CustomNextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#ffe000",
+        borderRadius: "50%",
+        padding: "12px",
+        right: "15px",
+        zIndex: 10,
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
+// Flèche gauche personnalisée
+const CustomPrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+        display: "block",
+        background: "#ffe000",
+        borderRadius: "50%",
+        padding: "12px",
+        left: "15px",
+        zIndex: 10,
+      }}
+      onClick={onClick}
+    />
+  );
+};
+
 const HeroCarrousel = ({ champions }) => {
   const navigate = useNavigate();
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 7000,
@@ -26,16 +66,25 @@ const HeroCarrousel = ({ champions }) => {
     slidesToScroll: 1,
     fade: true,
     arrows: true,
+    nextArrow: <CustomNextArrow />,
+    prevArrow: <CustomPrevArrow />,
   };
 
   const splashUrl = (championId) =>
     `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`;
 
   return (
-    <Box sx={{ position: "relative", height: { xs: 300, md: 600 }, overflow: "hidden" }}>
+    <Box
+      sx={{
+        position: "relative",
+        height: { xs: 300, md: 600 },
+        width: "100%",
+        mx: "auto",
+      }}
+    >
       <Slider {...settings}>
         {champions.map((champion) => (
-          <Box key={champion.id} sx={{ px: { xs: 2, md: 8 } }}>
+          <Box key={champion.id}>
             <Card
               sx={{
                 height: { xs: 300, md: 600 },

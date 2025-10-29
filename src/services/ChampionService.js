@@ -12,10 +12,12 @@ const fetchChampions = async (version, lang = 'fr_FR') => {
 };
 
 
+
 const fetchChampionById = async (version, id, lang = 'fr_FR') => {
   const result = await axios.get(`${baseUrl}/${version}/data/${lang}/champion/${id}.json`);
   return Object.values(result.data.data)[0];
 };
+
 
 export default {
   fetchLatestVersion,

@@ -1,0 +1,55 @@
+
+{
+"Demacia": {
+    "description": "Un royaume fort et légaliste où la magie est crainte",
+    "championIds": ["Garen", "Lux", "JarvanIV", "XinZhao", "Fiora", "Galio", "Poppy", "Quinn", "Shyvana", "Sona", "Vayne", "Kayle", "Morgana", "Lucian", "Senna", "Sylas"]
+  },
+  "Noxus": {
+    "description": "Un empire expansionniste brutal où seule la force compte",
+    "championIds": ["Darius", "Draven", "Katarina", "Talon", "Swain", "Vladimir", "Cassiopeia", "Leblanc", "Sion", "Kled", "Samira", "Rell", "Riven", "Briar", "Ambessa"]
+  },
+  "Freljord": {
+    "description": "Une terre gelée et impitoyable où règnent des tribus guerrières",
+    "championIds": ["Ashe", "Sejuani", "Lissandra", "Braum", "Tryndamere", "Anivia", "Nunu", "Volibear", "Ornn", "Gragas", "Olaf", "Udyr", "Gnar"]
+  },
+  "Ionia": {
+    "description": "Une nation insulaire en quête d'harmonie, ravagée par la guerre",
+    "championIds": ["Yasuo", "Ahri", "Akali", "Zed", "Shen", "Kennen", "Karma", "Irelia", "LeeSin", "MasterYi", "MonkeyKing", "Jhin", "Kayn", "Rakan", "Xayah", "Yone", "Lillia", "Sett", "Syndra", "Varus", "Hwei"]
+  },
+  "Piltover": {
+    "description": "La cité du progrès, centre de l'innovation et du commerce",
+    "championIds": ["Caitlyn", "Jayce", "Vi", "Heimerdinger", "Ezreal", "Orianna", "Camille", "Seraphine"]
+  },
+  "Zaun": {
+    "description": "Le monde souterrain pollué où la science folle prospère",
+    "championIds": ["Jinx", "Ekko", "Viktor", "Blitzcrank", "DrMundo", "Singed", "Twitch", "Warwick", "Zac", "Urgot", "Janna", "Zeri", "Renata"]
+  },
+  "Iles Obscures": {
+    "description": "Une terre maudite hantée par les âmes tourmentées",
+    "championIds": ["Thresh", "Hecarim", "Kalista", "Karthus", "Mordekaiser", "Elise", "Evelynn", "Maokai", "Yorick", "Viego", "Gwen"]
+  },
+  "Targon": {
+    "description": "Une montagne sacrée où résident les aspects célestes",
+    "championIds": ["Leona", "Diana", "Pantheon", "Taric", "AurelionSol", "Soraka", "Zoe", "Aphelios"]
+  },
+  "Shurima": {
+    "description": "Un empire du désert autrefois glorieux, aujourd'hui en ruines",
+    "championIds": ["Azir", "Sivir", "Xerath", "Nasus", "Renekton", "Rammus", "Amumu", "Taliyah", "Skarner", "KSante", "Naafiri"]
+  },
+  "Bilgewater": {
+    "description": "Un port de pirates et de contrebandiers sans foi ni loi",
+    "championIds": ["MissFortune", "Gangplank", "TwistedFate", "Graves", "Pyke", "Fizz", "Nautilus", "Illaoi", "TahmKench", "Nilah"]
+  },
+  "Néant": {
+    "description": "Une dimension alien cherchant à consumer toute existence",
+    "championIds": ["Kassadin", "Kaisa", "Malzahar", "Velkoz", "Chogath", "Khazix", "KogMaw", "RekSai", "Belveth"]
+  },
+  "Bandle City": {
+    "description": "La cité magique des yordles, joyeuse et fantaisiste",
+    "championIds": ["Teemo", "Tristana", "Lulu", "Corki", "Veigar", "Rumble", "Ziggs", "Yuumi", "Vex"]
+  },
+  "Ixtal": {
+    "description": "Une jungle luxuriante abritant une civilisation isolée",
+    "championIds": ["Qiyana", "Neeko", "Nidalee", "Rengar", "Zyra", "Milio"]
+  }
+}

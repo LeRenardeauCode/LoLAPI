@@ -25,7 +25,7 @@ const Navbar = () => {
         left: 0,
         zIndex: 100,
         margin: 0,
-        padding: 0
+        padding: 0,
       }}
       elevation={4}
     >
@@ -37,38 +37,85 @@ const Navbar = () => {
           justifyContent: "center",
         }}
       >
-        <Button color="inherit" component={Link} to="/" sx={{
+        <Button
+          color="inherit"
+          component={Link}
+          to="/"
+          sx={{
             fontWeight: 700,
             letterSpacing: 2,
             fontSize: 20,
-            color: '#e9e6c3', // Or pâle contrasté LoL
-            textTransform: 'none',
+            color: "#e9e6c3", // Or pâle contrasté LoL
+            textTransform: "none",
             mr: 2,
-            display : { xs: 'none', md: 'inline-flex' }
-          }}>
+            display: { xs: "none", md: "inline-flex" },
+          }}
+        >
           Accueil
         </Button>
-        <Button color="inherit" component={Link} to="/champions" sx={{
+        <Button
+          color="inherit"
+          component={Link}
+          to="/champions"
+          sx={{
             fontWeight: 700,
             letterSpacing: 2,
             fontSize: 20,
-            color: '#e9e6c3', // Or pâle contrasté LoL
-            textTransform: 'none',
+            color: "#e9e6c3", // Or pâle contrasté LoL
+            textTransform: "none",
             mr: 2,
-            display : { xs: 'none', md: 'inline-flex' }
-          }}>
+            display: { xs: "none", md: "inline-flex" },
+          }}
+        >
           Champions
         </Button>
-        <Button color="inherit" component={Link} to="/regions" sx={{
+        <Button
+          color="inherit"
+          component={Link}
+          to="/regions"
+          sx={{
             fontWeight: 700,
             letterSpacing: 2,
             fontSize: 20,
-            color: '#e9e6c3', // Or pâle contrasté LoL
-            textTransform: 'none',
+            color: "#e9e6c3", // Or pâle contrasté LoL
+            textTransform: "none",
             mr: 2,
-            display : { xs: 'none', md: 'inline-flex' }
-          }}>
+            display: { xs: "none", md: "inline-flex" },
+          }}
+        >
           Régions
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/regions"
+          sx={{
+            fontWeight: 700,
+            letterSpacing: 2,
+            fontSize: 20,
+            color: "#e9e6c3", // Or pâle contrasté LoL
+            textTransform: "none",
+            mr: 2,
+            display: { xs: "none", md: "inline-flex" },
+          }}
+        >
+          Objets
+        </Button>
+        <Button
+          color="inherit"
+          component={Link}
+          to="/regions"
+          sx={{
+            fontWeight: 700,
+            letterSpacing: 2,
+            fontSize: 20,
+            color: "#e9e6c3", // Or pâle contrasté LoL
+            textTransform: "none",
+            mr: 2,
+            display: { xs: "none", md: "inline-flex" },
+          }}
+        >
+          Runes & Sorts
         </Button>
 
         {/* Mobile menu toggle */}

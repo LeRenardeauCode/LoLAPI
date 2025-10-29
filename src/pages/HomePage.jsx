@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import ChampionService from "../services/ChampionService";
-import { Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import HeroCarrousel from "../components/HeroCarrousel";
 
 const HomePage = () => {
@@ -11,7 +11,7 @@ const HomePage = () => {
     try {
       const response = await ChampionService.fetchLatestVersion();
       const version = response.data[0];
-      setVersion(version)
+      setVersion(version);
 
       const championsArray = await ChampionService.fetchChampions(version);
       setChampions(championsArray);
@@ -38,12 +38,50 @@ const HomePage = () => {
       <Typography
         variant="h1"
         align="center"
-        color="gold"
-        sx={{ mb: 3, color: "#ffd700" }}
+        sx={{
+          fontWeight: "bold",
+          mb: 3,
+          color: "#c4a15b",
+          letterSpacing: "0.04em",
+          textShadow: "0 4px 16px #66635bff",
+          fontSize: { xs: "2.6rem", md: "3.3rem" },
+        }}
       >
-        Bienvenue sur LoLAPI
+        Bienvenue sur LoLAPP
       </Typography>
+      <Box
+        sx={{
+          width: "100%",
+          height: 4,
+          background: "linear-gradient(90deg, #C4A15B, #EDDC91)",
+          borderRadius: 2,
+          my: 4,
+        }}
+      />
       <HeroCarrousel champions={champions} version={version} />
+      <Box
+        sx={{
+          width: "100%",
+          height: 4,
+          background: "linear-gradient(90deg, #C4A15B, #EDDC91)",
+          borderRadius: 2,
+          my: 4,
+        }}
+      />
+      <Typography
+        variant="h2"
+        align="center"
+        sx={{
+          fontWeight: "bold",
+          mb: 3,
+          color: "#ffffffff",
+          letterSpacing: "0.04em",
+          fontSize: { xs: "1.3rem", md: "1.5rem" },
+        }}
+      >
+        Bienvenue sur LoLAPP, votre portail ultime pour explorer l’univers riche et dynamique de League of Legends.
+        Découvrez les champions, leurs skins, compétences et statistiques mises à jour automatiquement grâce aux dernières données officielles de Riot Games.
+      </Typography>
     </Container>
   );
 };
