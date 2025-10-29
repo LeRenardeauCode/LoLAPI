@@ -19,7 +19,7 @@ const Navbar = () => {
     <AppBar
       position="static"
       sx={{
-        background: "linear-gradient(90deg,#005A32 60%, #1c4532 100%)", // Vert LoL dégradé
+        background: "linear-gradient(90deg, #0f0f0fff 60%, #202221ff 100%)", // Vert LoL dégradé
         boxShadow: "0 2px 12px rgba(28, 69, 50, 0.6)",
         top: 0,
         left: 0,
