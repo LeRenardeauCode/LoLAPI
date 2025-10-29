@@ -1,0 +1,15 @@
+
+
+html, body {
+  background-color: #23272a !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  min-width: 100vw;
+}
+
+.slick-dots {
+  display: none !important;
+}
+

@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
-import { Container } from "@mui/material";
 import ChampionService from "../services/ChampionService";
-import ChampionCard from "../components/ChampionCard";
+import { Container, Typography } from "@mui/material";
+import HeroCarrousel from "../components/HeroCarrousel";
 
-const ChampionsPage = () => {
+const HomePage = () => {
   const [champions, setChampions] = useState([]);
+  const [version, setVersion] = useState("");
 
   const fetchChampions = async () => {
     try {
       const response = await ChampionService.fetchLatestVersion();
       const version = response.data[0];
+      setVersion(version)
+
       const championsArray = await ChampionService.fetchChampions(version);
       setChampions(championsArray);
     } catch (error) {
@@ -22,26 +25,27 @@ const ChampionsPage = () => {
   }, []);
 
   return (
-    
     <Container
       maxWidth="lg"
-      sx={{ pt: 3, minHeight: "100vh"}}
+      sx={{
+        pt: 2,
+        pb: 4,
+        backgroundColor: "#23272a",
+        color: "#fff",
+        minHeight: "100vh",
+      }}
     >
-      <h1 style={{ color: "#ffd700", textAlign: 'center' }}>Champions</h1>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "16px",
-          justifyContent: "center",
-        }}
+      <Typography
+        variant="h1"
+        align="center"
+        color="gold"
+        sx={{ mb: 3, color: "#ffd700" }}
       >
-        {champions.map((champion) => (
-          <ChampionCard champion={champion} key={champion.id} />
-        ))}
-      </div>
+        Bienvenue sur LoLAPI
+      </Typography>
+      <HeroCarrousel champions={champions} version={version} />
     </Container>
   );
 };
 
-export default ChampionsPage;
+export default HomePage;
