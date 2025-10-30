@@ -52,14 +52,14 @@ const RegionCard = ({ region, cardWidth = 400, cardHeight = 320 }) => {
             <Typography
             variant="h6"
             align="center"
-            sx={{ mt: 1, color: "#ffffffff" }}
+            sx={{ mt: 1, color: "#ffffffff", fontFamily: "Spiegel, serif" }}
             >
             {region.name}
             </Typography>
             <Typography
             variant="body2"
             align="center"
-            sx={{ mt: 1, color: "#cccccc", minHeight: 60 }}
+            sx={{ mt: 1, color: "#cccccc", minHeight: 60, fontFamily: "Beaufort, serif", fontSize: 16 }}
             >
             {region.description.length > 100
                 ? region.description.substring(0, 100) + "..."

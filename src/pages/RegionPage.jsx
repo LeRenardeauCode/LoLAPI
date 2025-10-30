@@ -21,37 +21,76 @@ const RegionPage = () => {
         fetchRegion();
     }, []);
 
-    return <>
+    return (
 
-        <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            <Typography
-                variant="h2"
-                sx={{
-                    color: "#ffe082",
-                    fontWeight: "bold",
-                    mb: 4,
-                    textAlign: 'center',
-                    letterSpacing: "0.04em",
-                    textShadow: "0 0 12px #c4a15b",
-                }}
-            >
-                Regions
-            </Typography>
+        <>
             <Box
                 sx={{
-                    display: "flex",
-                    gap: 3,
-                    flexWrap: "wrap",
-                    justifyContent: "center",
+                    position: "relative",
+                    minHeight: "100vh",
+                    backgroundColor: "#23272a",
+                    color: "#eee",
+                    pb: 8,
+                    zIndex: 1,
+                    overflowX: "hidden",
                 }}
             >
-                {region.map((region) => (
-                    <RegionCard region={region} key={region.name} />
-                ))}
+                {/* Overlay background splashart - FULL SCREEN */}
+                <Box
+                    sx={{
+                        position: "fixed",
+                        top: 0,
+                        left: 0,
+                        width: "100vw",
+                        height: "100vh",
+                        backgroundImage: "url(../public/assets/img/fond_ecran_region.jpg)",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        opacity: 0.15,
+                        filter: "blur(6px)",
+                        zIndex: 0,
+                        pointerEvents: "none",
+                    }}
+                />
+                <Container>
+                    <Typography
+                        variant="h2"
+                        sx={{
+                            color: "#ffe082",
+                            fontWeight: "bold",
+                            mb: 4,
+                            textAlign: 'center',
+                            letterSpacing: "0.04em",
+                            fontFamily: "Spiegel, serif"
+                        }}
+                    >
+                        Regions
+                    </Typography>
+                    <Box
+                        sx={{
+                            width: "100%",
+                            height: 4,
+                            background: "linear-gradient(90deg, #C4A15B, #EDDC91)",
+                            borderRadius: 2,
+                            my: 4,
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            display: "flex",
+                            gap: 3,
+                            flexWrap: "wrap",
+                            justifyContent: "center"
+                        }}
+                    >
+                        {region.map((region) => (
+                            <RegionCard region={region} key={region.name} />
+                        ))}
+                    </Box>
+                </Container>
             </Box>
-        </Container>
-
-    </>;
+        </>
+    );
 }
 
 export default RegionPage;

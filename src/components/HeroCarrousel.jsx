@@ -74,15 +74,7 @@ const HeroCarrousel = ({ champions }) => {
     `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${championId}_0.jpg`;
 
   return (
-    <Box
-      sx={{
-        position: "relative",
-        height: { xs: 300, md: 600 },
-        width: "100%",
-        mx: "auto",
-      }}
-    >
-      <Slider {...settings}>
+      <Slider {...settings} sx={{ borderRadius: 4, overflow: "hidden" }}>
         {champions.map((champion) => (
           <Box key={champion.id}>
             <Card
@@ -124,7 +116,7 @@ const HeroCarrousel = ({ champions }) => {
                   pb: 3,
                 }}
               >
-                <Typography variant="h2" sx={{ fontWeight: "bold", userSelect: "none" }}>
+                <Typography variant="h2" sx={{ fontWeight: "bold", userSelect: "none", fontFamily: "Spiegel, serif" }}>
                   {champion.name}
                 </Typography>
                 <Button
@@ -152,7 +144,6 @@ const HeroCarrousel = ({ champions }) => {
           </Box>
         ))}
       </Slider>
-    </Box>
   );
 };
 

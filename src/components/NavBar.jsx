@@ -5,6 +5,8 @@ import {
   IconButton,
   Menu,
   MenuItem,
+  Box,
+  Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
@@ -20,7 +22,7 @@ const Navbar = () => {
       position="static"
       sx={{
         background: "linear-gradient(90deg, #0f0f0fff 60%, #202221ff 100%)", // Vert LoL dégradé
-        boxShadow: "0 2px 12px rgba(28, 69, 50, 0.6)",
+        boxShadow: "0 2px 12px rgba(233, 215, 157, 0.77)",
         top: 0,
         left: 0,
         zIndex: 100,
@@ -34,14 +36,11 @@ const Navbar = () => {
           minHeight: "64px",
           px: { xs: 1, sm: 3 },
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-between",
         }}
       >
-        <Button
-          color="inherit"
-          component={Link}
-          to="/"
-          sx={{
+        <Box>
+          <Typography sx={{
             fontWeight: 700,
             letterSpacing: 2,
             fontSize: 20,
@@ -49,15 +48,94 @@ const Navbar = () => {
             textTransform: "none",
             mr: 2,
             display: { xs: "none", md: "inline-flex" },
-          }}
-        >
-          Accueil
-        </Button>
-        <Button
-          color="inherit"
-          component={Link}
-          to="/champions"
-          sx={{
+          }}>
+            LolAPP
+          </Typography>
+        </Box>
+        <Box>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
+            Accueil
+          </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/champions"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
+            Champions
+          </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/regions"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
+            Régions
+          </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/regions"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
+            Objets
+          </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/regions"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
+            Runes & Sorts
+          </Button>
+        </Box>
+        <Box>
+          <Typography sx={{
             fontWeight: 700,
             letterSpacing: 2,
             fontSize: 20,
@@ -65,58 +143,11 @@ const Navbar = () => {
             textTransform: "none",
             mr: 2,
             display: { xs: "none", md: "inline-flex" },
-          }}
-        >
-          Champions
-        </Button>
-        <Button
-          color="inherit"
-          component={Link}
-          to="/regions"
-          sx={{
-            fontWeight: 700,
-            letterSpacing: 2,
-            fontSize: 20,
-            color: "#e9e6c3", // Or pâle contrasté LoL
-            textTransform: "none",
-            mr: 2,
-            display: { xs: "none", md: "inline-flex" },
-          }}
-        >
-          Régions
-        </Button>
-        <Button
-          color="inherit"
-          component={Link}
-          to="/regions"
-          sx={{
-            fontWeight: 700,
-            letterSpacing: 2,
-            fontSize: 20,
-            color: "#e9e6c3", // Or pâle contrasté LoL
-            textTransform: "none",
-            mr: 2,
-            display: { xs: "none", md: "inline-flex" },
-          }}
-        >
-          Objets
-        </Button>
-        <Button
-          color="inherit"
-          component={Link}
-          to="/regions"
-          sx={{
-            fontWeight: 700,
-            letterSpacing: 2,
-            fontSize: 20,
-            color: "#e9e6c3", // Or pâle contrasté LoL
-            textTransform: "none",
-            mr: 2,
-            display: { xs: "none", md: "inline-flex" },
-          }}
-        >
-          Runes & Sorts
-        </Button>
+            cursor: "pointer",
+          }} onClick={() => window.location = 'mailto:toto@tata.com'}>
+            Contact
+          </Typography>
+        </Box>
 
         {/* Mobile menu toggle */}
         <IconButton

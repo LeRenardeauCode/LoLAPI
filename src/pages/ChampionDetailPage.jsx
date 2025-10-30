@@ -113,7 +113,7 @@ const ChampionDetailPage = () => {
               <Box sx={{ display: "flex", alignItems: "center", mb: 2, m: 2 }}>
                 <Typography
                   variant="h2"
-                  sx={{ fontWeight: "bold", color: "#EDDC91", mb: 2 }}
+                  sx={{ fontWeight: "bold", color: "#EDDC91", mb: 2, fontFamily: "Spiegel, serif" }}
                 >
                   {champion.name}
                   {champion.tags &&
@@ -137,19 +137,19 @@ const ChampionDetailPage = () => {
                     ))}
                 </Typography>
               </Box>
-              <Typography variant="body1" sx={{ mb: 3 }}>
+              <Typography variant="body1" sx={{ mb: 3, fontFamily: "Beaufort, serif", fontSize: 20 }}>
                 {champion.lore}
               </Typography>
 
               {/* Compétences */}
               <Box sx={{ mt: 4 }}>
-                <Typography variant="h5" sx={{ mb: 1, color: "#e9e6c3", }}>
+                <Typography variant="h5" sx={{ mb: 1, color: "#e9e6c3", fontFamily: "Spiegel, serif" }}>
                   Compétences :
                 </Typography>
-                <Box sx={{ display: "flex", gap: 3, flexWrap: "wrap" }}>
+                <Box sx={{ display: "flex", gap: 3, flexWrap: "wrap", mt: 2, justifyContent: "space-between" }}>
                   {champion.spells &&
                     champion.spells.map((spell) => (
-                      <Box key={spell.id} sx={{ textAlign: "center" }}>
+                      <Box key={spell.id} sx={{ textAlign: "center", minWidth: 80, '&:hover': { display: 'block', transform: 'scale(1.1)', transition: 'transform 0.3s' },}}>
                         <img
                           src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${spell.image.full}`}
                           alt={spell.name}
@@ -161,7 +161,7 @@ const ChampionDetailPage = () => {
                             boxShadow: "0 0 8px #EDDC91",
                           }}
                         />
-                        <Typography variant="subtitle1">{spell.name}</Typography>
+                        <Typography variant="subtitle1" sx={{ fontFamily: "Beaufort, serif"}}>{spell.name}</Typography>
                       </Box>
                     ))}
                 </Box>
@@ -178,23 +178,23 @@ const ChampionDetailPage = () => {
                   boxShadow: "0 0 10px #C4A15B",
                 }}
               >
-                <Typography variant="h5" sx={{ color: "#EDDC91" }}>
+                <Typography variant="h5" sx={{ color: "#EDDC91", mb: 2, fontFamily: "Spiegel, serif" }}>
                   Stats :
                 </Typography>
                 <Grid container spacing={2}>
                   <Grid item>
-                    <Typography>PV : {champion.stats ? champion.stats.hp : "-"}</Typography>
+                    <Typography sx={{ fontFamily: "Spiegel, serif"}}>PV : {champion.stats ? champion.stats.hp : "-"}</Typography>
                   </Grid>
                   <Grid item>
-                    <Typography>Mana : {champion.stats ? champion.stats.mp : "-"}</Typography>
+                    <Typography sx={{ fontFamily: "Spiegel, serif"}}>Mana : {champion.stats ? champion.stats.mp : "-"}</Typography>
                   </Grid>
                   <Grid item>
-                    <Typography>
+                    <Typography sx={{ fontFamily: "Spiegel, serif"}}>
                       Attaque : {champion.stats ? champion.stats.attackdamage : "-"}
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <Typography>
+                    <Typography sx={{ fontFamily: "Spiegel, serif"}}>
                       Vitesse d'attaque : {champion.stats ? champion.stats.attackspeed : "-"}
                     </Typography>
                   </Grid>
@@ -202,12 +202,12 @@ const ChampionDetailPage = () => {
                     <Typography>Armure : {champion.stats ? champion.stats.armor : "-"}</Typography>
                   </Grid>
                   <Grid item>
-                    <Typography>
+                    <Typography sx={{ fontFamily: "Spiegel, serif"}}>
                       Résistance magique : {champion.stats ? champion.stats.spellblock : "-"}
                     </Typography>
                   </Grid>
                   <Grid item>
-                    <Typography>
+                    <Typography sx={{ fontFamily: "Spiegel, serif"}}>
                       Vitesse : {champion.stats ? champion.stats.movespeed : "-"}
                     </Typography>
                   </Grid>
@@ -228,7 +228,7 @@ const ChampionDetailPage = () => {
               }}
             />
             <Box sx={{ p: 3, bgcolor: "#16171b", borderRadius: 2, boxShadow: "0 0 10px #C4A15B" }}>
-              <Typography variant="h5" gutterBottom sx={{ color: "#EDDC91" }}>
+              <Typography variant="h5" gutterBottom sx={{ color: "#EDDC91", mb: 2, fontFamily: "Spiegel, serif" }}>
                 Skins disponibles :
               </Typography>
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 2 }}>

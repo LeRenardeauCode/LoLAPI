@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-const ChampionCard = ({ champion, cardWidth = 220, cardHeight = 320 }) => {
+const ChampionCard = ({ champion, cardWidth = 150, cardHeight = 300 }) => {
   const navigate = useNavigate();
 
   return (
@@ -52,13 +52,13 @@ const ChampionCard = ({ champion, cardWidth = 220, cardHeight = 320 }) => {
           <Typography
             variant="h6"
             align="center"
-            sx={{ mt: 1, color: "#ffffffff" }}
+            sx={{ mt: 1, color: "#ffffffff", fontFamily: "Spiegel, serif" }}
           >
             {champion.name}
           </Typography>
           <Typography
             variant="body2"
-            sx={{ mb: 1, px: 2, textAlign: "center", color: "#ddd" }}
+            sx={{ mb: 1, px: 2, textAlign: "center", color: "#e9e6c3", fontFamily: "Beaufort, serif", fontSize: 15 }}
           >
             {champion.title}
           </Typography>

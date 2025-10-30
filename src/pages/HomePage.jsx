@@ -25,16 +25,8 @@ const HomePage = () => {
   }, []);
 
   return (
-    <Container
-      maxWidth="lg"
-      sx={{
-        pt: 2,
-        pb: 4,
-        backgroundColor: "#23272a",
-        color: "#fff",
-        minHeight: "100vh",
-      }}
-    >
+
+    <Container>
       <Typography
         variant="h1"
         align="center"
@@ -45,7 +37,9 @@ const HomePage = () => {
           letterSpacing: "0.04em",
           textShadow: "0 4px 16px #66635bff",
           fontSize: { xs: "2.6rem", md: "3.3rem" },
+          fontFamily: "Spiegel, serif",
         }}
+
       >
         Bienvenue sur LoLAPP
       </Typography>
@@ -58,7 +52,10 @@ const HomePage = () => {
           my: 4,
         }}
       />
-      <HeroCarrousel champions={champions} version={version} />
+      <Box sx={{ zIndex: 2, mb: 4, borderRadius: 4, maxHeight: 700 }}>
+        <HeroCarrousel champions={champions} version={version} />
+      </Box>
+
       <Box
         sx={{
           width: "100%",
@@ -77,6 +74,7 @@ const HomePage = () => {
           color: "#ffffffff",
           letterSpacing: "0.04em",
           fontSize: { xs: "1.3rem", md: "1.5rem" },
+          fontFamily: "Beaufort, serif",
         }}
       >
         Bienvenue sur LoLAPP, votre portail ultime pour explorer l’univers riche et dynamique de League of Legends.

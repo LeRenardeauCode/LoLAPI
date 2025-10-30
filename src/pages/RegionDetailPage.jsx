@@ -93,13 +93,13 @@ const RegionDetailPage = () => {
                             <img
                                 src={region.icon}
                                 alt={`${region.name} icon`}
-                                style={{ width: 55, height: 80, marginBottom: 8 }}
+                                style={{ width: 80, height: "auto", marginBottom: 8 }}
                             />
                         </Box>
-                        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2, textAlign: "center", color: "#e9e6c3" }}>
+                        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 2, textAlign: "center", color: "#e9e6c3", fontFamily: "Spiegel, serif" }}>
                             {region.name}
                         </Typography>
-                        <Typography sx={{ fontSize: 19, mb: 3, textAlign: "center", color: "white" }}>{region.description}</Typography>
+                        <Typography sx={{ fontSize: 19, mb: 3, textAlign: "center", color: "white", fontFamily: "Beaufort, serif" }}>{region.description}</Typography>
                         {/* Sous-box factions */}
                         <Box sx={{ border: "2px solid #ffd700", borderRadius: 2, mt: 2, p: 2, bgcolor: "#ede7d620" }}>
                             <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1, color: "#e9e6c3" }}>Factions</Typography>
@@ -119,24 +119,28 @@ const RegionDetailPage = () => {
                             borderRadius: 3,
                             p: 2,
                             minWidth: 200,
-                            minHeight: 210,
+                            minHeight: 300,
                             bgcolor: "#23272aed",
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "center",
-                            justifyContent: "center"
+                            justifyContent: "space-evenly",
                         }}
                     >
+                        <Box>
+                            <Typography variant="h6" sx={{ fontWeight: "bold", mb: 2, color: "#e9e6c3", fontFamily: 'Spiegel, serif'}}>Champions associés</Typography>
+                        </Box>
+                        
                         <Box sx={{ display: "flex", flexDirection: "column", gap: 2, alignItems: "center" }}>
                             {(champions.length > 0
-                                ? champions.slice(0, 3)   // affiche 8 premiers
+                                ? champions.slice(0, 3)   // affiche 3 premiers
                                 : region.championIds.slice(0, 3)
                             ).map((champion, i) => (
                                 <Box
                                     key={i}
-                                    sx={{ display: "flex", flexDirection: "column", alignItems: "center", cursor: "pointer", mb: 1, "&:hover": { transform: "scale(1.1)" } }}
+                                    sx={{ display: "flex", flexDirection: "column", alignItems: "center", cursor: "pointer", mb: 1, "&:hover": { transform: "scale(1.1)" }, objectFit: "cover", transition: "transform 0.3s" }}
                                     onClick={() =>
-                                        navigate("/champion/" + (champion.id || champion)) // si détail ou juste l’id
+                                        navigate("/champion/" + (champion.id || champion))
                                     }
                                 >
                                     <img
@@ -146,21 +150,21 @@ const RegionDetailPage = () => {
                                         }
                                         alt={champion.name || champion}
                                         style={{
-                                            width: 54,
-                                            height: 54,
+                                            width: 'auto',
+                                            height: 'auto',
                                             borderRadius: "50%",
                                             border: "2px solid #EDDC91",
                                             boxShadow: "0 0 8px #c4a15b"
                                         }}
                                     />
-                                    <Typography variant="caption" sx={{ color: "#EDDC91", fontWeight: 700 }}>
+                                    <Typography variant="caption" sx={{ color: "#EDDC91", fontWeight: 700, fontFamily: 'Spiegel, serif', mt: 0.5, textAlign: "center" }}>
                                         {champion.name || champion}
                                     </Typography>
                                 </Box>
                             ))}
                         </Box>
                         <Button
-                            size="small"
+                            size="lg"
                             variant="contained"
                             sx={{
                                 mt: 2,
@@ -168,6 +172,7 @@ const RegionDetailPage = () => {
                                 fontWeight: 700,
                                 background: "linear-gradient(to right, #ff9800, #ffe000)",
                                 color: "#23272a",
+                                fontFamily: 'Spiegel, serif',
                             }}
                             onClick={() => navigate(`/champions?region=${region.name}`)}
                         >

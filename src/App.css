@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Beaufort';
+  src: url('/public/fonts/BeaufortforLOL-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Spiegel';
+  src: url('/public/fonts/Spiegel_TT_Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

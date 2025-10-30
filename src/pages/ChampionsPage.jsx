@@ -22,7 +22,35 @@ const ChampionsPage = () => {
   }, []);
 
   return (
-
+  <>
+    <Box
+      sx={{
+        position: "relative",
+        minHeight: "100vh",
+        backgroundColor: "#23272a",
+        color: "#eee",
+        pb: 8,
+        zIndex: 1,
+        overflowX: "hidden",
+      }}
+    >
+      {/* Overlay background splashart - FULL SCREEN */}
+      <Box
+        sx={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          backgroundImage: "url(../public/assets/img/fond_ecran_champion.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          opacity: 0.15,
+          filter: "blur(4px)",
+          zIndex: 0,
+          pointerEvents: "none",
+        }}
+      />
       <Container>
         <Typography
           variant="h2"
@@ -32,11 +60,20 @@ const ChampionsPage = () => {
             mb: 4,
             textAlign: 'center',
             letterSpacing: "0.04em",
-            textShadow: "0 0 12px #c4a15b",
+            fontFamily: "Spiegel, serif"
           }}
         >
           Champions
         </Typography>
+        <Box
+          sx={{
+            width: "100%",
+            height: 4,
+            background: "linear-gradient(90deg, #C4A15B, #EDDC91)",
+            borderRadius: 2,
+            my: 4,
+          }}
+        />
         <Box
           sx={{
             display: "flex",
@@ -50,6 +87,8 @@ const ChampionsPage = () => {
           ))}
         </Box>
       </Container>
+    </Box>
+  </>
   );
 };
 
