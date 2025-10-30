@@ -143,7 +143,7 @@ const ChampionDetailPage = () => {
 
               {/* Compétences */}
               <Box sx={{ mt: 4 }}>
-                <Typography variant="h5" sx={{ mb: 1, color: "#EDDC91" }}>
+                <Typography variant="h5" sx={{ mb: 1, color: "#e9e6c3", }}>
                   Compétences :
                 </Typography>
                 <Box sx={{ display: "flex", gap: 3, flexWrap: "wrap" }}>

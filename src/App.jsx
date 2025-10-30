@@ -6,6 +6,8 @@ import ChampionsPage from "./pages/ChampionsPage";
 import ChampionDetailPage from "./pages/ChampionDetailPage";
 import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
+import RegionPage from "./pages/RegionPage";
+import RegionDetailPage from "./pages/RegionDetailPage";
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/champions" element={<ChampionsPage />} />
             <Route path="/champion/:id" element={<ChampionDetailPage />} />
+            <Route path="/regions" element={<RegionPage/>} />
+            <Route path="/region/:regionName" element={<RegionDetailPage/>} />
           </Routes>
         </Container>
       </Router>

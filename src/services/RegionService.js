@@ -5,6 +5,8 @@ const getAllRegions = () => {
   return Object.entries(REGIONS_DATA).map(([name, data]) => ({
     name,
     description: data.description,
+    image: data.image,
+    icon: data.icon,
     championCount: data.championIds.length,
     championIds: data.championIds
   }));
@@ -16,7 +18,9 @@ const getRegionByChampionId = (championId) => {
     if (data.championIds.includes(championId)) {
       return {
         name: regionName,
-        description: data.description
+        description: data.description,
+        image: data.image,
+        icon: data.icon
       };
     }
   }
@@ -31,6 +35,8 @@ const getRegionByName = (regionName) => {
   return {
     name: regionName,
     description: data.description,
+    image: data.image,
+    icon: data.icon,
     championIds: data.championIds
   };
 };
