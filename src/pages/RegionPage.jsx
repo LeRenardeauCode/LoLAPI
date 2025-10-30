@@ -33,6 +33,7 @@ const RegionPage = () => {
                     pb: 8,
                     zIndex: 1,
                     overflowX: "hidden",
+                    pt: { xs: '72px', md: '72px' }
                 }}
             >
                 {/* Overlay background splashart - FULL SCREEN */}

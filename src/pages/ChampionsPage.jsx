@@ -26,6 +26,7 @@ const ChampionsPage = () => {
     <Box
       sx={{
         position: "relative",
+        pt: { xs: '72px', md: '72px' },
         minHeight: "100vh",
         backgroundColor: "#23272a",
         color: "#eee",

@@ -22,7 +22,7 @@ const ChampionCard = ({ champion, cardWidth = 150, cardHeight = 300 }) => {
           height: cardHeight,
           bgcolor: "#23272a",
           borderRadius: 2,
-          boxShadow: "0 4px 16px #C4A15B40",
+          boxShadow: "0 4px 16px #fae9c940",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -30,7 +30,7 @@ const ChampionCard = ({ champion, cardWidth = 150, cardHeight = 300 }) => {
           transition: "transform 0.15s",
           "&:hover": {
             transform: "scale(1.045)",
-            boxShadow: "0 0 16px #EDDC91",
+            boxShadow: "0 0 16px #000000ff",
           },
         }}
         onClick={() => navigate("/champion/" + champion.id)}

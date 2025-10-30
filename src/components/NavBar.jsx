@@ -9,20 +9,23 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = useState(null);
+  const navigate = useNavigate();
+
   const handleMenuOpen = (event) => setAnchorEl(event.currentTarget);
   const handleMenuClose = () => setAnchorEl(null);
 
   return (
     <AppBar
-      position="static"
+      position="fixed"
       sx={{
-        background: "linear-gradient(90deg, #0f0f0fff 60%, #202221ff 100%)", // Vert LoL dégradé
-        boxShadow: "0 2px 12px rgba(233, 215, 157, 0.77)",
+        
+        background: "linear-gradient(90deg, #0f0f0fff 75%, #202221FF 100%)",
+        boxShadow: "0 2px 12px rgba(0, 0, 0, 0.77)",
         top: 0,
         left: 0,
         zIndex: 100,
@@ -38,17 +41,37 @@ const Navbar = () => {
           display: "flex",
           justifyContent: "space-between",
         }}
+        variant="dense"
       >
-        <Box>
-          <Typography sx={{
-            fontWeight: 700,
-            letterSpacing: 2,
-            fontSize: 20,
-            color: "#e9e6c3", // Or pâle contrasté LoL
-            textTransform: "none",
-            mr: 2,
-            display: { xs: "none", md: "inline-flex" },
-          }}>
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            gap: 1,
+            cursor: "pointer",
+          }}
+          onClick={() => navigate("/")}
+        >
+          <img
+            src="/assets/img/icon-lol.png"
+            alt="LoLAPP Logo"
+            style={{
+              height: "32px",
+              width: "60px",
+            }}
+            sx={{ display: { xs: "none", md: "block" } }}
+          />
+          <Typography
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
             LolAPP
           </Typography>
         </Box>
@@ -135,16 +158,19 @@ const Navbar = () => {
           </Button>
         </Box>
         <Box>
-          <Typography sx={{
-            fontWeight: 700,
-            letterSpacing: 2,
-            fontSize: 20,
-            color: "#e9e6c3", // Or pâle contrasté LoL
-            textTransform: "none",
-            mr: 2,
-            display: { xs: "none", md: "inline-flex" },
-            cursor: "pointer",
-          }} onClick={() => window.location = 'mailto:toto@tata.com'}>
+          <Typography
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+              cursor: "pointer",
+            }}
+            onClick={() => (window.location = "mailto:toto@tata.com")}
+          >
             Contact
           </Typography>
         </Box>
