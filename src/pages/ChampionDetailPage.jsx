@@ -5,11 +5,13 @@ import championService from "../services/ChampionService";
 import SkinCard from "../components/SkinCard";
 import SpellIconWithTooltip from "../components/SpellIconTooltip";
 
+
 const ChampionDetailPage = () => {
   const { id } = useParams();
   const [champion, setChampion] = useState({});
   const [version, setVersion] = useState();
-
+  
+  
   const fetchChampion = async () => {
     try {
       const response = await championService.fetchLatestVersion();
@@ -98,6 +100,8 @@ const ChampionDetailPage = () => {
                   objectFit: "cover",
                   boxShadow: "0 0 32px #C4A15B",
                   display: "block",
+                  position: "relative",
+                  zIndex: 1,
                 }}
               />
             </Container>
@@ -181,7 +185,6 @@ const ChampionDetailPage = () => {
                       />
                     ))}
                 </Box>
-                
               </Box>
 
               {/* Stats */}
