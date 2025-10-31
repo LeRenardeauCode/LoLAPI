@@ -8,6 +8,7 @@ import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import RegionPage from "./pages/RegionPage";
 import RegionDetailPage from "./pages/RegionDetailPage";
+import ObjectsPage from "./pages/ObjectsPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/champion/:id" element={<ChampionDetailPage />} />
             <Route path="/regions" element={<RegionPage/>} />
             <Route path="/region/:regionName" element={<RegionDetailPage/>} />
+            <Route path="/objets" element={<ObjectsPage />} />
           </Routes>
         </Container>
       </Router>
