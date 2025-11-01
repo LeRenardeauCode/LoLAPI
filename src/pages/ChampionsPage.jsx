@@ -78,7 +78,7 @@ const ChampionsPage = () => {
             width: "100vw",
             height: "100vh",
             backgroundImage:
-              "url(../public/assets/img/fond_ecran_champion.jpg)",
+              "url(../assets/img/fond_ecran_champion.jpg)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             opacity: 0.15,

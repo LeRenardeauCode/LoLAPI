@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Box, Typography } from "@mui/material";
+import { Container, Box, Typography, Tooltip } from "@mui/material";
 import ItemService from "../services/ItemService";
 
 const ObjectsPage = () => {
@@ -34,12 +34,28 @@ const ObjectsPage = () => {
     }
   };
 
+  const renderDescription = (desc) =>
+    desc
+      .replace(/<\/?mainText>/g, "")
+      .replace(/<br\s*\/?>/gi, "<br />")
+      .replace(/<stats>/g, "<span style='color:#8ef;'>")
+      .replace(/<\/stats>/g, "</span>")
+      .replace(/<attention>/g, "<b>")
+      .replace(/<\/attention>/g, "</b>")
+      .replace(/<active>/g, "<span style='color:#f39;'>")
+      .replace(/<\/active>/g, "</span>")
+      .replace(/<passive>/g, "<span style='color:#EDDC91;'>")
+      .replace(/<\/passive>/g, "</span>")
+      .replace(/<speed>/g, "<span style='color:#61dafb;'>")
+      .replace(/<\/speed>/g, "</span>")
+      .replace(/<keyword[^>]*>|<\/keyword>/g, "");
+
   useEffect(() => {
     fetchItemsAndGroupByTag();
   }, []);
 
   return (
-    <Container sx={{ pt: 8, pb: 8, m: 0, color: "#eee", overflowX: "hidden",}}>
+    <Container sx={{ pt: 8, pb: 8, m: 0, color: "#eee", overflowX: "hidden" }}>
       <Box
         sx={{
           position: "fixed",
@@ -99,27 +115,53 @@ const ObjectsPage = () => {
           </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             {items.map((item) => (
-              <Box
+              <Tooltip
                 key={item.id}
-                sx={{
-                  width: 48,
-                  height: 48,
-                  borderRadius: 1,
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  cursor: "pointer",
-                }}
-                title={item.name}
+                title={
+                  <span
+                    style={{ whiteSpace: "pre-line", fontSize: 14 }}
+                    dangerouslySetInnerHTML={{
+                      __html: renderDescription(item.description),
+                    }}
+                  />
+                }
+                arrow
               >
-                <img
-                  src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/item/${item.image.full}`}
-                  alt={item.name}
-                  width="32"
-                  height="32"
-                  loading="lazy"
-                />
-              </Box>
+                <Box
+                  sx={{
+                    width: 48,
+                    height: "auto",
+                    borderRadius: 1,
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    flexDirection: "column",
+                    cursor: "pointer",
+                    p: 1.5,
+                  }}
+                  aria-label={item.name}
+                >
+                  <img
+                    src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/item/${item.image.full}`}
+                    alt={item.name}
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <Typography
+                    variant="caption"
+                    sx={{
+                      color: "#ffe082",
+                      fontFamily: "Spiegel, serif",
+                      textAlign: "center",
+                      mt: 0.5,
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    {item.name}
+                  </Typography>
+                </Box>
+              </Tooltip>
             ))}
           </Box>
         </Box>

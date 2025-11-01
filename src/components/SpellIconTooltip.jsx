@@ -37,7 +37,6 @@ const SpellIconWithTooltip = ({ spell, version }) => {
             <Typography variant="body2" sx={{ whiteSpace: "normal", color: "white" }}>
               {spell.description}
             </Typography>
-            {/* Ajoute les stats ici si tu veux */}
           </Paper>
         </Popper>
       </Box>

@@ -143,7 +143,7 @@ const Navbar = () => {
           <Button
             color="inherit"
             component={Link}
-            to="/RunesSorts"
+            to="/runessorts"
             sx={{
               fontWeight: 700,
               letterSpacing: 2,

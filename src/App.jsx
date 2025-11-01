@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import RegionPage from "./pages/RegionPage";
 import RegionDetailPage from "./pages/RegionDetailPage";
 import ObjectsPage from "./pages/ObjectsPage";
+import RunesAndSummonersPage from "./pages/RuneSpellPage";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/regions" element={<RegionPage/>} />
             <Route path="/region/:regionName" element={<RegionDetailPage/>} />
             <Route path="/objets" element={<ObjectsPage />} />
+            <Route path="/runessorts" element={<RunesAndSummonersPage />} />
           </Routes>
         </Container>
       </Router>
