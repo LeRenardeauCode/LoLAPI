@@ -63,7 +63,7 @@ const ObjectsPage = () => {
           left: 0,
           width: "100vw",
           height: "100vh",
-          backgroundImage: "url(../public/assets/img/fond_ecran_home.png)",
+          backgroundImage: "url(/assets/img/fond_ecran_home.png)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.15,

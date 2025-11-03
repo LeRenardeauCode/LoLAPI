@@ -46,7 +46,7 @@ const RunesAndSummonersPage = () => {
           left: 0,
           width: "100vw",
           height: "100vh",
-          backgroundImage: "url(../assets/img/fond_ecran_runes.jpg)",
+          backgroundImage: "url(/assets/img/fond_ecran_runes.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.15,

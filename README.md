@@ -32,11 +32,20 @@ cd <nom-du-projet>
 
 npm install
 
-3. **Lancer le serveur de développement**
+3. **Lancer le serveur de développement OU par Docker**
 
 npm run dev
+
+OU
+
+docker build -t lolapi .
+docker run -p 8080:80 lolapi
 
 4. **Accéder à l’application**
 
 Rendez-vous sur http://localhost:5173 (ou le port affiché dans le terminal).
+
+OU 
+
+Accédez à l'application avec http://localhost:8080
 

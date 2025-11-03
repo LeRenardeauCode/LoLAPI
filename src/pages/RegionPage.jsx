@@ -44,7 +44,7 @@ const RegionPage = () => {
                         left: 0,
                         width: "100vw",
                         height: "100vh",
-                        backgroundImage: "url(../public/assets/img/fond_ecran_region.jpg)",
+                        backgroundImage: "url(/assets/img/fond_ecran_region.jpg)",
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         opacity: 0.15,
