@@ -1,0 +1,45 @@
+name: CI - Build et Vérification
+
+# Déclenche le workflow automatiquement
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+# Les jobs à exécuter
+jobs:
+  build:
+    name: Build Application
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Récupérer le code du repo
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    # 2. Installer Node.js 18
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    # 3. Installer les dépendances
+    - name: 📦 Install dependencies
+      run: npm ci
+
+    # 4. Builder l'application (vérifie qu'il n'y a pas d'erreurs)
+    - name: 🏗️ Build application
+      run: npm run build
+
+    # 5. Vérifier que le dossier dist/ a été créé
+    - name: ✅ Verify build output
+      run: |
+        if [ -d "dist" ]; then
+          echo "✅ Build successful - dist/ folder created"
+          ls -lh dist/
+        else
+          echo "❌ Build failed - dist/ folder not found"
+          exit 1
+        fi
