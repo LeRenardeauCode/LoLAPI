@@ -10,6 +10,7 @@ import RegionPage from "./pages/RegionPage";
 import RegionDetailPage from "./pages/RegionDetailPage";
 import ObjectsPage from "./pages/ObjectsPage";
 import RunesAndSummonersPage from "./pages/RuneSpellPage";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -27,8 +28,10 @@ const App = () => {
             <Route path="/runessorts" element={<RunesAndSummonersPage />} />
           </Routes>
         </Container>
+        <Footer />
       </Router>
     </div>
+
   );
 };
 
