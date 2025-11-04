@@ -1,4 +1,9 @@
-# Projet Data Dragon — Interface React
+# LoLAPP
+
+![CI Status](https://github.com/LeRenardeauCode/LoLAPI/workflows/CI%20-%20Build%20et%20Vérification/badge.svg)
+
+Application web League of Legends avec React + Vite.
+
 
 ## À propos du projet
 
@@ -12,7 +17,7 @@ Aucune clé API n’est nécessaire : toutes les données utilisées proviennent
 ## Technologies utilisées
 
 - **React** — Librairie principale pour la construction de l’interface  
--- **Node** - Utilisation de Node pour le terminal et le lancement de projet
+- **Node** - Utilisation de Node pour le terminal et le lancement de projet
 - **Vite** — Environnement de développement rapide et moderne  
 - **npm** — Gestionnaire de dépendances  
 - **React Router DOM** — Gestion de la navigation et des routes  
