@@ -8,9 +8,8 @@ const RegionPage = () => {
 
     const fetchRegion = async () => {
         try {
-            const regionArray = await RegionService.getAllRegions();
+            const regionArray = RegionService.getAllRegions();
             setRegion(regionArray);
-            console.log(regionArray);
 
         } catch (error) {
             console.error(error);

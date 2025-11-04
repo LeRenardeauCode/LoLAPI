@@ -48,7 +48,7 @@ const RegionCard = ({ region, cardWidth = 400, cardHeight = 320 }) => {
             borderTopRightRadius: 8,
             }}
         />
-        <CardContent display="flex" flexDirection="column" alignItems="center" sx={{ p: 1, pt: 2 }}>
+        <CardContent sx={{ p: 1, pt: 2 }}>
             <Typography
             variant="h6"
             align="center"

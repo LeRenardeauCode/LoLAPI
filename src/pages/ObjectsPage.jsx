@@ -1,20 +1,17 @@
+// ObjectsPage.jsx
 import { useState, useEffect } from "react";
 import { Container, Box, Typography, Tooltip } from "@mui/material";
 import ItemService from "../services/ItemService";
+import ChampionService from "../services/ChampionService";
 
 const ObjectsPage = () => {
-  // États en premier
   const [itemsByTag, setItemsByTag] = useState({});
   const [version, setVersion] = useState("");
 
-  // Fonction asynchrone qui récupère les items et fait le regroupement
   const fetchItemsAndGroupByTag = async () => {
     try {
-      const versionResponse = await fetch(
-        "https://ddragon.leagueoflegends.com/api/versions.json"
-      );
-      const versions = await versionResponse.json();
-      const latestVersion = versions[0];
+      const versionResponse = await ChampionService.fetchLatestVersion();
+      const latestVersion = versionResponse.data[0];
       setVersion(latestVersion);
 
       const items = await ItemService.fetchItems(latestVersion);
