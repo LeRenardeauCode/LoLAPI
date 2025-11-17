@@ -1,0 +1,1302 @@
+[
+  {
+    "id": 1,
+    "question": "Quelle est la région d'origine d'Ahri ?",
+    "options": [
+      "Ionia",
+      "Noxus",
+      "Demacia",
+      "Freljord"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 2,
+    "question": "Quel champion dit : 'Hasagi!' ?",
+    "options": [
+      "Zed",
+      "Yasuo",
+      "Shen",
+      "Lee Sin"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 3,
+    "question": "Quelle est l'arme principale de Jinx ?",
+    "options": [
+      "Un arc",
+      "Des pistolets",
+      "Une épée",
+      "Un fusil mitrailleur géant"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 4,
+    "question": "Quel champion est connu comme 'Le Cœur de Freljord' ?",
+    "options": [
+      "Ashe",
+      "Sejuani",
+      "Braum",
+      "Lissandra"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 5,
+    "question": "Quelle est la sœur de Vi ?",
+    "options": [
+      "Caitlyn",
+      "Jinx",
+      "Lux",
+      "Kai'Sa"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 6,
+    "question": "Quel champion utilise des ombres pour se battre ?",
+    "options": [
+      "Zed",
+      "Talon",
+      "Kayn",
+      "Nocturne"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 7,
+    "question": "Qui est le roi de Demacia ?",
+    "options": [
+      "Garen",
+      "Jarvan IV",
+      "Xin Zhao",
+      "Lucian"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 8,
+    "question": "Quel champion est un yordle scientifique ?",
+    "options": [
+      "Teemo",
+      "Heimerdinger",
+      "Tristana",
+      "Rumble"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 9,
+    "question": "Quelle est la race d'Aurelion Sol ?",
+    "options": [
+      "Dragon stellaire",
+      "Humain",
+      "Darkin",
+      "Yordle"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 10,
+    "question": "Quel champion porte un masque blanc ?",
+    "options": [
+      "Zed",
+      "Shen",
+      "Jhin",
+      "Yasuo"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 11,
+    "question": "Qui est la Justicière de Demacia ?",
+    "options": [
+      "Lux",
+      "Vayne",
+      "Fiora",
+      "Quinn"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 12,
+    "question": "Quel champion est un mage de glace de Freljord ?",
+    "options": [
+      "Anivia",
+      "Lissandra",
+      "Ashe",
+      "Sejuani"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 13,
+    "question": "Qui est le frère de Katarina ?",
+    "options": [
+      "Talon",
+      "Cassiopeia",
+      "Darius",
+      "Draven"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 14,
+    "question": "Quel champion dit 'Welcome to the League of Draven' ?",
+    "options": [
+      "Darius",
+      "Draven",
+      "Garen",
+      "Jarvan IV"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 15,
+    "question": "Quelle est la couleur des cheveux de Lux ?",
+    "options": [
+      "Brun",
+      "Blond",
+      "Roux",
+      "Noir"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 16,
+    "question": "Quel champion utilise un grappin ?",
+    "options": [
+      "Camille",
+      "Vi",
+      "Nautilus",
+      "Pyke"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 17,
+    "question": "Qui est le champion le plus rapide de League of Legends ?",
+    "options": [
+      "Rammus",
+      "Hecarim",
+      "Jhin",
+      "Quinn"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 18,
+    "question": "Quel champion est une araignée ?",
+    "options": [
+      "Elise",
+      "Evelynn",
+      "Nidalee",
+      "Shyvana"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 19,
+    "question": "Qui chante 'K/DA - POP/STARS' ?",
+    "options": [
+      "Ahri, Akali, Evelynn, Kai'Sa",
+      "Lux, Jinx, Vi, Caitlyn",
+      "Seraphine, Sona, Ahri, Lux",
+      "Katarina, LeBlanc, Syndra, Zoe"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 20,
+    "question": "Quel champion est un gardien du temps ?",
+    "options": [
+      "Ekko",
+      "Zilean",
+      "Bard",
+      "Twisted Fate"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "champions"
+  },
+  {
+    "id": 21,
+    "question": "Quel est le vrai nom de Jhin ?",
+    "options": [
+      "Khada Jhin",
+      "Jin",
+      "John",
+      "Inconnu"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 22,
+    "question": "Combien de formes différentes possède Nidalee ?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 23,
+    "question": "Quel champion a tué les parents de Caitlyn ?",
+    "options": [
+      "Jinx",
+      "Vi",
+      "C (Corina Veraza)",
+      "Inconnu"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 24,
+    "question": "Quelle est la relation entre Kayle et Morgana ?",
+    "options": [
+      "Sœurs",
+      "Mère et fille",
+      "Ennemies sans lien",
+      "Cousines"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 25,
+    "question": "Quel Darkin possède Kayn ?",
+    "options": [
+      "Aatrox",
+      "Rhaast",
+      "Varus",
+      "Xolaani"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 26,
+    "question": "Qui a créé Orianna (la partie robotique) ?",
+    "options": [
+      "Heimerdinger",
+      "Son père",
+      "Viktor",
+      "Jayce"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 27,
+    "question": "Quel est le nom de l'ours de Volibear ?",
+    "options": [
+      "Il n'a pas d'ours",
+      "Volibear EST l'ours",
+      "Ornn",
+      "Anivia"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 28,
+    "question": "Qui a enseigné à Yasuo l'art du vent ?",
+    "options": [
+      "Shen",
+      "Zed",
+      "Yone",
+      "Maître Souma"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 29,
+    "question": "Quel champion a été corrompu par le Vide ?",
+    "options": [
+      "Kassadin",
+      "Kai'Sa",
+      "Malzahar",
+      "Tous ces champions"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 30,
+    "question": "Qui est le créateur de Blitzcrank ?",
+    "options": [
+      "Viktor",
+      "Heimerdinger",
+      "Jayce",
+      "Lui-même"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 31,
+    "question": "Combien d'armes différentes Aphelios peut-il utiliser ?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 32,
+    "question": "Quel champion était autrefois un gladiateur ?",
+    "options": [
+      "Draven",
+      "Darius",
+      "Sett",
+      "Sylas"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 33,
+    "question": "Qui a emprisonné Sylas ?",
+    "options": [
+      "Garen",
+      "Lux",
+      "Demacia",
+      "Jarvan III"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 34,
+    "question": "Quel est le surnom de Thresh ?",
+    "options": [
+      "Le Geôlier",
+      "Le Gardien des Chaînes",
+      "Le Collecteur d'Âmes",
+      "Le Tourmenteur"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 35,
+    "question": "Quelle est la profession de Twisted Fate ?",
+    "options": [
+      "Assassin",
+      "Tricheur/Joueur de cartes",
+      "Pirate",
+      "Voleur"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 36,
+    "question": "Qui a formé Akali ?",
+    "options": [
+      "Shen",
+      "Zed",
+      "Kennen",
+      "Shen et Kennen"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 37,
+    "question": "Quel champion peut se transformer en différentes créatures ?",
+    "options": [
+      "Nidalee",
+      "Shyvana",
+      "Gnar",
+      "Tous ces champions"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 38,
+    "question": "Qui est le partenaire de Graves ?",
+    "options": [
+      "Twisted Fate",
+      "Gangplank",
+      "Pyke",
+      "Miss Fortune"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 39,
+    "question": "Quel champion utilise de l'hextech dans son corps ?",
+    "options": [
+      "Viktor",
+      "Camille",
+      "Urgot",
+      "Tous ces champions"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 40,
+    "question": "Quelle est la particularité de Yuumi ?",
+    "options": [
+      "C'est un chat magique",
+      "Elle peut se lier à des alliés",
+      "Elle a un livre magique",
+      "Toutes ces réponses"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "champions"
+  },
+  {
+    "id": 41,
+    "question": "Combien y a-t-il de dragons élémentaires dans Summoner's Rift ?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 42,
+    "question": "Combien de joueurs composent une équipe en Summoner's Rift ?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 43,
+    "question": "Quel est le niveau maximum d'un champion ?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "20"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 44,
+    "question": "Combien de tourelles y a-t-il par lane ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 45,
+    "question": "Quel objectif donne un buff permanent à toute l'équipe ?",
+    "options": [
+      "Baron Nashor",
+      "Dragon",
+      "Grompeur",
+      "Herald"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 46,
+    "question": "Combien de sorts d'invocateur peut-on équiper ?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 47,
+    "question": "Quelle est la monnaie utilisée pour acheter des objets ?",
+    "options": [
+      "RP",
+      "Or",
+      "Essence Bleue",
+      "Gemmes"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 48,
+    "question": "Combien d'objets peut-on avoir dans son inventaire ?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 49,
+    "question": "Quel objectif apparaît à 14 minutes ?",
+    "options": [
+      "Baron Nashor",
+      "Dragon de l'âme",
+      "Void Grubs",
+      "Herald"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 50,
+    "question": "Quelle touche active le recall par défaut ?",
+    "options": [
+      "B",
+      "R",
+      "T",
+      "H"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 51,
+    "question": "Combien de runes peut-on équiper au total ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "9"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 52,
+    "question": "Quelle est la lane du milieu appelée ?",
+    "options": [
+      "Top",
+      "Mid",
+      "Bot",
+      "Jungle"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 53,
+    "question": "Combien de compétences de base a un champion ?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 54,
+    "question": "Quel objectif donne un buff pour pusher ?",
+    "options": [
+      "Baron Nashor",
+      "Dragon",
+      "Herald",
+      "Grompeur"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 55,
+    "question": "Combien de sorts peut-on améliorer au niveau 1 ?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "gameplay"
+  },
+  {
+    "id": 56,
+    "question": "Combien d'or rapporte une élimination (kill) de base ?",
+    "options": [
+      "250",
+      "300",
+      "350",
+      "400"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 57,
+    "question": "À quel niveau peut-on améliorer son ultime pour la première fois ?",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 58,
+    "question": "Combien de temps dure le recall de base ?",
+    "options": [
+      "6 secondes",
+      "7 secondes",
+      "8 secondes",
+      "10 secondes"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 59,
+    "question": "Quelle est la vitesse de déplacement de base de la plupart des champions ?",
+    "options": [
+      "300",
+      "325",
+      "350",
+      "375"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 60,
+    "question": "Combien de PV a le Nexus ?",
+    "options": [
+      "3500",
+      "4000",
+      "5000",
+      "5500"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 61,
+    "question": "À partir de combien de minutes apparaît le Baron Nashor ?",
+    "options": [
+      "10 min",
+      "14 min",
+      "20 min",
+      "25 min"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 62,
+    "question": "Combien de dragons faut-il tuer pour obtenir l'Âme du Dragon ?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 63,
+    "question": "Quel est le temps de recharge de Flash ?",
+    "options": [
+      "240 secondes",
+      "300 secondes",
+      "360 secondes",
+      "420 secondes"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 64,
+    "question": "Combien d'or de départ a-t-on en début de partie ?",
+    "options": [
+      "400",
+      "450",
+      "475",
+      "500"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 65,
+    "question": "Quelle est la portée d'un ward classique ?",
+    "options": [
+      "900",
+      "1000",
+      "1100",
+      "1200"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 66,
+    "question": "Combien de temps dure le buff du Baron Nashor ?",
+    "options": [
+      "2 min",
+      "2.5 min",
+      "3 min",
+      "3.5 min"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 67,
+    "question": "Combien de wards peut-on avoir en même temps sur la carte ?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 68,
+    "question": "Quel est le temps de réapparition au niveau 1 ?",
+    "options": [
+      "8 sec",
+      "10 sec",
+      "12 sec",
+      "15 sec"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 69,
+    "question": "Combien d'expérience faut-il pour passer du niveau 1 au niveau 2 ?",
+    "options": [
+      "240",
+      "280",
+      "300",
+      "320"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 70,
+    "question": "À partir de combien de dragons le Dragon Ancestral apparaît ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "gameplay"
+  },
+  {
+    "id": 71,
+    "question": "Quel objet donne le plus de dégâts d'attaque pur ?",
+    "options": [
+      "Lame d'Infini",
+      "Bloodthirster",
+      "Force de la Trinité",
+      "Gage de Sterak"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 72,
+    "question": "Quel objet permet de revenir à la vie ?",
+    "options": [
+      "Sablier de Zhonya",
+      "Ange gardien",
+      "Égide solaire",
+      "Vœu de Rédemption"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 73,
+    "question": "Quel objet donne un bouclier anti-magie ?",
+    "options": [
+      "Cimeterre mercuriel",
+      "Maw de Malmortius",
+      "Banshee",
+      "Masque abyssal"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 74,
+    "question": "Combien coûte un Sceptre de cristal de Rylai ?",
+    "options": [
+      "2400",
+      "2600",
+      "2800",
+      "3000"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 75,
+    "question": "Quel objet donne le plus de points de vie ?",
+    "options": [
+      "Warmog",
+      "Cœur d'acier",
+      "Jak'Sho",
+      "Force de la nature"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 76,
+    "question": "Quel objet permet de se rendre invisible temporairement ?",
+    "options": [
+      "Cape du crépuscule",
+      "Voile de la banshee",
+      "Griffe du spectre",
+      "Lame du roi déchu"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 77,
+    "question": "Quel objet donne le plus de puissance (AP) ?",
+    "options": [
+      "Coiffe de Rabadon",
+      "Bâton du vide",
+      "Échos de Luden",
+      "Sablier de Zhonya"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 78,
+    "question": "Quel objet réduit les soins reçus par les ennemis ?",
+    "options": [
+      "Épée du divin",
+      "Rappel mortel",
+      "Lame du roi déchu",
+      "Rancune de Serylda"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 79,
+    "question": "Combien d'objets légendaires peut-on acheter maximum ?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "Illimité"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 80,
+    "question": "Quel objet donne de la vitesse de déplacement hors combat ?",
+    "options": [
+      "Bottes de mobilité",
+      "Bottes de célérité",
+      "Bottes de rapidité",
+      "Bottes Ioniennes"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 81,
+    "question": "Quel objet permet de placer des wards ?",
+    "options": [
+      "Oeil du gardien",
+      "Pierre de garde",
+      "Épée noire",
+      "Objet de support complété"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 82,
+    "question": "Quel objet donne un dash ?",
+    "options": [
+      "Galeforce",
+      "Immortal Shieldbow",
+      "Kraken Slayer",
+      "Navori"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 83,
+    "question": "Quel objet augmente les soins et les boucliers ?",
+    "options": [
+      "Encensoir ardent",
+      "Rédemption",
+      "Bâton des flux",
+      "Mikael"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 84,
+    "question": "Combien coûtent les bottes de base ?",
+    "options": [
+      "250",
+      "300",
+      "350",
+      "400"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 85,
+    "question": "Quel objet permet de ralentir avec les dégâts magiques ?",
+    "options": [
+      "Sceptre de Rylai",
+      "Malfaisance",
+      "Horizon",
+      "Bâton du vide"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "medium",
+    "category": "items"
+  },
+  {
+    "id": 86,
+    "question": "Qui est le fondateur de Demacia ?",
+    "options": [
+      "Jarvan IV",
+      "Garen",
+      "Orlon",
+      "Jarvan I"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 87,
+    "question": "Quel est le vrai nom de Swain ?",
+    "options": [
+      "Jericho Swain",
+      "Marcus Swain",
+      "Vladimir Swain",
+      "Darius Swain"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 88,
+    "question": "Qui a créé les Darkin ?",
+    "options": [
+      "Le Vide",
+      "Les Aspects",
+      "Les Shurimans",
+      "Les humains corrompus"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 89,
+    "question": "Quelle est la relation entre Varus et les deux chasseurs ?",
+    "options": [
+      "Ils sont fusionnés ensemble",
+      "Varus les contrôle",
+      "Ils sont ennemis",
+      "Aucune"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 90,
+    "question": "Qui a tué Senna ?",
+    "options": [
+      "Thresh",
+      "Hecarim",
+      "Karthus",
+      "Mordekaiser"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 91,
+    "question": "Quel est le vrai nom de la ville de Zaun ?",
+    "options": [
+      "Piltover Inférieur",
+      "Oshra Va'Zaun",
+      "Sous-Piltover",
+      "La Cité Grise"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 92,
+    "question": "Qui est l'empereur de Shurima ?",
+    "options": [
+      "Azir",
+      "Xerath",
+      "Nasus",
+      "Renekton"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 93,
+    "question": "Quel Aspect possède Leona ?",
+    "options": [
+      "Soleil",
+      "Lune",
+      "Guerre",
+      "Crépuscule"
+    ],
+    "correctAnswer": 0,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 94,
+    "question": "Qui a banni Yasuo de son village ?",
+    "options": [
+      "Yone",
+      "Shen",
+      "Zed",
+      "Les anciens"
+    ],
+    "correctAnswer": 3,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 95,
+    "question": "Quel est le nom du démon qui possède Yone ?",
+    "options": [
+      "Azakana",
+      "Un azakana",
+      "Raum",
+      "Inconnu"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 96,
+    "question": "Qui a créé Hextech ?",
+    "options": [
+      "Viktor",
+      "Jayce",
+      "Jayce et Viktor ensemble",
+      "Heimerdinger"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 97,
+    "question": "Quelle est la race de Soraka avant sa transformation ?",
+    "options": [
+      "Humaine",
+      "Céleste/Aspect",
+      "Vastaya",
+      "Ange"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 98,
+    "question": "Qui contrôle le Brouillard Noir ?",
+    "options": [
+      "Thresh",
+      "Hecarim",
+      "Viego",
+      "Kalista"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 99,
+    "question": "Quel est le nom de la femme de Viego ?",
+    "options": [
+      "Kalista",
+      "Isolde",
+      "Senna",
+      "Gwen"
+    ],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "category": "lore"
+  },
+  {
+    "id": 100,
+    "question": "Qui est le créateur d'Aurelion Sol ?",
+    "options": [
+      "Les Targoniens",
+      "Le Vide",
+      "Personne, il existe depuis toujours",
+      "Les Aspects"
+    ],
+    "correctAnswer": 2,
+    "difficulty": "hard",
+    "category": "lore"
+  }
+]

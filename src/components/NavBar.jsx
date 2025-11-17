@@ -23,7 +23,6 @@ const Navbar = () => {
     <AppBar
       position="fixed"
       sx={{
-        
         background: "linear-gradient(90deg, #0f0f0fff 75%, #202221FF 100%)",
         boxShadow: "0 2px 12px rgba(0, 0, 0, 0.77)",
         top: 0,
@@ -155,6 +154,22 @@ const Navbar = () => {
             }}
           >
             Runes & Sorts
+          </Button>
+          <Button
+            color="inherit"
+            component={Link}
+            to="/quiz"
+            sx={{
+              fontWeight: 700,
+              letterSpacing: 2,
+              fontSize: 20,
+              color: "#e9e6c3", // Or pâle contrasté LoL
+              textTransform: "none",
+              mr: 2,
+              display: { xs: "none", md: "inline-flex" },
+            }}
+          >
+            Quiz
           </Button>
         </Box>
         <Box>

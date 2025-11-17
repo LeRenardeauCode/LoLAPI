@@ -10,6 +10,7 @@ import RegionPage from "./pages/RegionPage";
 import RegionDetailPage from "./pages/RegionDetailPage";
 import ObjectsPage from "./pages/ObjectsPage";
 import RunesAndSummonersPage from "./pages/RuneSpellPage";
+import QuizPage from "./pages/QuizPage";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/region/:regionName" element={<RegionDetailPage/>} />
             <Route path="/objets" element={<ObjectsPage />} />
             <Route path="/runessorts" element={<RunesAndSummonersPage />} />
+            <Route path="/quiz" element={<QuizPage />} />
           </Routes>
         </Container>
         <Footer />

@@ -15,26 +15,26 @@ jobs:
 
     steps:
     # 1. Récupérer le code du repo
-    - name: 📥 Checkout code
+    - name: Checkout code
       uses: actions/checkout@v4
 
     # 2. Installer Node.js 18
-    - name: 🔧 Setup Node.js
+    - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
 
     # 3. Installer les dépendances
-    - name: 📦 Install dependencies
+    - name: Install dependencies
       run: npm ci
 
     # 4. Builder l'application (vérifie qu'il n'y a pas d'erreurs)
-    - name: 🏗️ Build application
+    - name: Build application
       run: npm run build
 
     # 5. Vérifier que le dossier dist/ a été créé
-    - name: ✅ Verify build output
+    - name: Verify build output
       run: |
         if [ -d "dist" ]; then
           echo "✅ Build successful - dist/ folder created"

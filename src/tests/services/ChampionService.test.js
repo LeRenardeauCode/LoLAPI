@@ -7,7 +7,6 @@ import axios from "axios";
 
 describe("ChampionService", () => {
   beforeEach(() => {
-    // Nettoyer les mocks avant chaque test
     vi.clearAllMocks();
     localStorage.clear();
   });
